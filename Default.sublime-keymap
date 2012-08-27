@@ -1,0 +1,4 @@
+[
+    { "keys": ["alt+enter"], "command": "make_block", "args": { "forward": true }},
+    { "keys": ["alt+shift+enter"], "command": "make_block", "args": { "forward": false }}
+]

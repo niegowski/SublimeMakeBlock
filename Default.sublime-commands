@@ -1,0 +1,12 @@
+[
+    {
+        "caption": "Make Block: Cursor at end",
+        "command": "make_block",
+        "args": { "forward": 1 }
+    },
+    {
+        "caption": "Make Block: Cursor at begin",
+        "command": "make_block",
+        "args": { "forward": 0 }
+    }
+]
