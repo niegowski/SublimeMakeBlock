@@ -90,8 +90,8 @@ class MakeBlockCommand(sublime_plugin.TextCommand):
 
             # check if there is 'else' in line after block
             after = view.text_point(lastRow + 2, 0)
-            match = view.find("^\s*else", after)
-            if match != None:
+            match = view.find(r"^\s*else", after)
+            if match != None and match.begin() == after:
                 line = view.line(view.text_point(lastRow + 1, 0))
                 view.replace(edit, sublime.Region(line.end(), match.end()-4), " ")
 
